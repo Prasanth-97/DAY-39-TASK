@@ -7,7 +7,7 @@ app.listen(PORT,()=>console.log(`The server started in ${PORT} ⭐`));
 
 app.post("/creatingfiles",(request,response)=>{
     console.log(__dirname);  
-    // creating folder using mkdir
+    // creating folder using mkdir.
     const folderPath = path.join(__dirname,"dateTime");
     fs.mkdir(folderPath,(err)=>{
         if(err){
